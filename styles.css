@@ -1,4 +1,4 @@
-/* General styles */
+/* General body styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
@@ -13,32 +13,53 @@ header {
     text-align: center;
 }
 
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Container for the tools */
 .container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
+    gap: 20px;
 }
 
+/* Each tool box styling */
 .tool-box {
-    width: 30%;
-    margin-bottom: 20px;
+    width: 250px;
     text-align: center;
     background-color: #f1f1f1;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.tool-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo images styling */
 .tool-box img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
+/* Title styling inside each tool box */
 .tool-box h3 {
     font-size: 1.5em;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-weight: 600;
 }
 
 /* Button styling */
@@ -51,6 +72,7 @@ header {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .cta-button:hover {
@@ -63,8 +85,12 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
+/* Footer links styling */
 footer a {
     color: #3498db;
 }
