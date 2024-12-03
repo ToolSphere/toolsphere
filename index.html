@@ -4,108 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toolsphere</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        /* General styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #fafafa;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #3498db;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-
-        .tool-box {
-            width: 30%;
-            margin-bottom: 20px;
-            text-align: center;
-            background-color: #f1f1f1;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .tool-box img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .tool-box h3 {
-            font-size: 1.5em;
-            margin-top: 10px;
-        }
-
-        /* Button styling */
-        .cta-button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #2980b9;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-        footer a {
-            color: #3498db;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            .tool-box {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Welcome to Toolsphere</h1>
-        <p>Explore a collection of powerful online tools</p>
+        <p>Explore a collection of useful tools to boost your productivity!</p>
     </header>
 
     <div class="container">
+        <!-- Canva Tool -->
         <div class="tool-box">
             <img src="canva-logo.png" alt="Canva Logo">
             <h3>Canva</h3>
-            <p>Create stunning designs with ease.</p>
+            <p>Create stunning graphics and designs easily.</p>
             <a href="https://www.canva.com" target="_blank"><button class="cta-button">Visit Canva</button></a>
         </div>
+
+        <!-- Quillbot Tool -->
         <div class="tool-box">
             <img src="quillbot-logo.png" alt="Quillbot Logo">
             <h3>Quillbot</h3>
-            <p>Rewrite and improve your content with AI.</p>
+            <p>Paraphrase and improve your writing effortlessly.</p>
             <a href="https://www.quillbot.com" target="_blank"><button class="cta-button">Visit Quillbot</button></a>
         </div>
-        <div class="
+
+        <!-- Grammarly Tool -->
+        <div class="tool-box">
+            <img src="grammarly-logo.png" alt="Grammarly Logo">
+            <h3>Grammarly</h3>
+            <p>Enhance your writing with grammar checks and suggestions.</p>
+            <a href="https://www.grammarly.com" target="_blank"><button class="cta-button">Visit Grammarly</button></a>
+        </div>
+
+        <!-- ChatGPT Tool -->
+        <div class="tool-box">
+            <img src="chatgpt-logo.png" alt="ChatGPT Logo">
+            <h3>ChatGPT</h3>
+            <p>Chat with an AI and get answers to all your questions.</p>
+            <a href="https://chat.openai.com" target="_blank"><button class="cta-button">Visit ChatGPT</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Toolsphere. All rights reserved.</p>
+        <p>Follow us on <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
+    </footer>
+</body>
+</html>
